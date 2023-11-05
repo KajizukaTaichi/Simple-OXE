@@ -3,19 +3,26 @@
 <html lang="ja">
     <head>
         <title>Simpleプログラミング言語</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
     </head>
 
     <body>
         <header>
-            <h1>Simpleプログラミング言語 オンライン実行環境</h1>
+            <a href="https://github.com/KajizukaTaichi/Simple-OXE/">
+                <h2>Simpleプログラミング言語 オンライン実行環境</h2>
+            </a>
         </header>
         
         <form action="/" method="POST">
-            <button type="submit">実行</button><br>
-            <textarea name="code" id="" cols="150" rows="20">{{code}}</textarea>
+            プログラム　<button type="submit">実行</button><br>
+            <textarea name="code" class="code" cols="163" rows="12" onkeydown="handleTabKey(event, this)">{{code}}</textarea><br>
+    
+            標準入力<br>
+            <textarea name="input" class="input" cols="163" rows="2">{{input}}</textarea><br>
+
+            標準出力<br>
+            <textarea class="reply" cols="163" rows="3">{{ reply }}</textarea>
         </form>
-        
-        <pre>{{ reply }}</pre>
     </body>
 </html>
