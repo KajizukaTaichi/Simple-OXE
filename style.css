@@ -1,0 +1,13 @@
+body {
+    background-color:antiquewhite;
+}
+
+button {
+    margin: auto;
+}
+
+textarea {
+    background-color: dimgray;
+    color: white;
+    font-size: larger;
+}
