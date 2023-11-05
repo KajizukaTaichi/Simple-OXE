@@ -1,0 +1,53 @@
+html {
+    zoom: 92%;
+}
+
+header {
+    background-color: rgb(72, 115, 196);
+    border-radius: 20px;
+    display: flex; /* Flexboxを使用して要素を横に並べます */
+    align-items: center; /* 要素を垂直方向に中央寄せ */
+    justify-content: center; /* 水平方向の中央寄せ */
+    margin-bottom: 20px;
+}
+
+
+a {
+    color: black;
+    /* リンクのテキストカラーを黒に設定 */
+    text-decoration: none;
+    /* リンクの下線を削除 */
+}
+
+body {
+    background-color: rgb(140, 164, 221);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+button {
+    border-radius: 1px;
+}
+
+textarea {
+    resize: none;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reply {
+    background-color: azure;
+    border-width: larger;
+}
+
+.input {
+    background-color: azure;
+}
+
+.code {
+    background-color:rgb(21, 28, 48);
+    color: white;
+    border-color: white;
+}
