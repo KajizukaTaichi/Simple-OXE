@@ -1,3 +1,6 @@
-while 5
-print 4
-end while
+func route(n)
+    return n 0.5 ^
+end func
+
+input number
+print route(number)
